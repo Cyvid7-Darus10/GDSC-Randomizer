@@ -128,6 +128,7 @@ function startWheel() {
                 //populate question
                 d3.select("#question h1")
                     .text(data[picked].question);
+                $("#question h1").css('color', colors[picked%4]);
                 oldrotation = rotation;
                 container.on("click", spin);
             });
