@@ -39,7 +39,7 @@ function updateList() {
     $("#items-holder").html("");
     let unorderList = "";
     items.forEach(function(item, i) {
-        unorderList += "<li class="+ color[i%3]+">" + item + "</li>";
+        unorderList += "<li class="+ color[i%4]+">" + item + "</li>";
     });
 
     $("#items-holder").html(unorderList);
