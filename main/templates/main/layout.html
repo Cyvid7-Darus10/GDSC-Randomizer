@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="{% static 'images/bg2.jpg' %}" />
+    <meta property="og:description" content="GDSC UP Cebu Word Picker" />
+    <meta property="og:title" content="GDSC | Randomizer" />
+    <meta property="og:image:width" content="1000"/>
+    <meta property="og:image:height" content="1000"/>
+
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.ico' %}" sizes="16x16">
+    <title>GDSC Randomizer</title>
+    <link rel="stylesheet" href="{% static 'main/styles.css' %}" />
+    <script src="{% static 'lib/jquery.min.js' %}"></script>
+  </head>
+  
+  <body>
+
+    <div class="content-wrapper">
+      <div class="overlay"></div>
+      <div class="content">
+          <section class="main home-content container">
+            {% for css in csss %}
+              <link rel="stylesheet" href="{{ css }}" />
+            {% endfor %}
+            {% block content %} 
+            {% endblock %}
+            {% for js in jss %}
+              <script src="{{ js }}"></script>
+            {% endfor %}
+          </section>
+      </div>
+    </div>
+  </body>
+  <script defer src="{% static 'main/common.js' %}"></script>
+  <script defer src="https://use.fontawesome.com/0b39e945a8.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</html>

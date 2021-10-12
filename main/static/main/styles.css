@@ -1,0 +1,142 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+html,
+body {
+  font-family: 'Product Sans';
+  min-width: 320px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: url('/static/images/bg.png');
+  background-color: bisque;
+  background-position: right;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/********************
+Navigation
+*********************/
+.navigation {
+  display: flex;
+  background: rgba( 28, 27, 27, 0.4 );
+  backdrop-filter: blur( 14px );
+  -webkit-backdrop-filter: blur( 14px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  transition: 500ms;
+  align-items: center;
+  justify-content: center;
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+  z-index: 100;
+}
+
+.navigation:hover .container{
+  filter: blur(1px);
+}
+
+.logo {
+  color: #fff;
+  font-size: 2rem;
+  margin-right: 3vw;
+}
+
+.logo div {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #67d172;
+  border-radius: 5px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin: 10px;
+  transition: 500ms;
+}
+
+.menu ul li:hover {
+  background-color: #000000f3;
+  padding: 0 1rem;
+}
+
+.menu ul li a {
+  color: #67d172;
+  font-size: 2rem;
+}
+
+/********************
+Content
+*********************/
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  text-align: center;
+}
+
+.home-content {
+  color: #67d172;
+  margin-top: 8rem;
+}
+
+.home-content h2 {
+  font-size: 6rem;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

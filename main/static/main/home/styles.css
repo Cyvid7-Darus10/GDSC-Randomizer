@@ -1,0 +1,141 @@
+#start {
+    transition: .5s;
+}
+
+#start:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#container-rand {
+    min-height: 55rem;
+    min-width: 100rem;
+    max-width: 100rem;
+    padding: 3rem;
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgb(255 255 255 / 78%);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+#div-inputs{ 
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+#items-holder li {
+    font-size: 4rem;
+    display: inline;
+    padding: 1rem;
+    transition: 1s;
+}
+
+.modal {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+    transition: all 0.3s linear;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#item {
+    height: 5rem;
+    width: 34rem;
+    font-family: 'Product Sans';
+    font-size: 2rem;
+}
+
+
+#randomize {
+    background-image: linear-gradient(to right, #e2b01d, #4e84dd, #20975f, #d54f44);
+    box-shadow: 0 4px 15px 0 rgb(45 54 65 / 75%);
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+#randomize:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.blue {
+    color: #4e84dd;
+}
+
+.red {
+    color: #d54f44;
+}
+
+.yellow {
+    color: #e2b01d;
+}
+
+.green {
+    color: #20975f;
+}
+
+#div-inputs {
+    z-index: 100;
+}
+
+
+/* WHEEL */
+
+#chart{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 0;
+    left: 9px;
+}
+
+#question{
+    position: absolute;
+    width:400px;
+    height:500px;
+    top:0;
+    left:520px;
+}
+
+#question h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top:50%;
+    -webkit-transform:translate(0,-50%);
+            transform:translate(0,-50%);
+}
