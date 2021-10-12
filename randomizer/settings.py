@@ -14,7 +14,6 @@ SECRET_KEY = 'django-insecure-uz+ivw2*j_fy&)z*=bv#kpnj)4#&!qk1w8t=_6&h8d4(ifo56&
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
 ALLOWED_HOSTS = ["gdsc-randomizer.herokuapp.com"]
 
 
@@ -96,14 +95,13 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Taipei'
 
 USE_I18N = True
 
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
